@@ -1,5 +1,14 @@
 import { defineConfig } from 'vite'
+import react from '@vitejs/react-swc'
+import tailwindcss from '@tailwindcss/vite'
+
 
 export default defineConfig({
- base: '/examm/'
+  plugins: [
+    react(),
+ 
+    tailwindcss({ optimize: false }) 
+  ],
+
+  base: '/vomy/', 
 })
